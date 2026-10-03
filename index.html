@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#09091a" />
+  <title>VibeX Beta</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="hero">
+      <header class="topbar">
+        <div class="brand" aria-label="VibeX">
+          <span class="brand-vibe">Vibe</span><span class="brand-x">X</span>
+        </div>
+        <button class="menu-btn" aria-label="القائمة">☰</button>
+      </header>
+
+      <div class="hero-glow hero-glow-one"></div>
+      <div class="hero-glow hero-glow-two"></div>
+
+      <div class="hero-content">
+        <div class="beta-badge">🔥 Beta Version</div>
+        <h1>شارك لحظاتك<br />مع العالم</h1>
+        <p class="lead">فيديوهات قصيرة، لايف، شات، غرف، أصدقاء جدد وأكثر بكثير ...</p>
+
+        <div class="phones-card">
+          <div class="phone phone-left">
+            <div class="phone-screen">
+              <div class="mini-video mini-a"></div>
+              <div class="mini-video mini-b"></div>
+            </div>
+          </div>
+          <div class="phone phone-main">
+            <div class="phone-screen portrait-screen">
+              <div class="portrait-face"></div>
+              <div class="floating-hearts">♥<br>♥<br>♥</div>
+            </div>
+          </div>
+          <div class="phone phone-right">
+            <div class="phone-screen">
+              <div class="mini-video mini-c"></div>
+              <div class="mini-video mini-d"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="release-card">
+          <div><span>الإصدار</span><strong>0.9.0 (Beta)</strong></div>
+          <div><span>الحجم</span><strong>85 MB</strong></div>
+          <div><span>آخر تحديث</span><strong>15 يناير 2025</strong></div>
+        </div>
+
+        <button id="downloadBtn" class="download-btn">
+          <span class="download-icon">⇩</span>
+          <span>تحميل VibeX</span>
+          <small>(Android) النسخة التجريبية</small>
+        </button>
+        <div class="safety-note">آمن 100% • نسخة تجريبية للاختبار فقط</div>
+      </div>
+    </section>
+
+    <section class="download-panel" id="downloadPanel" hidden>
+      <div class="cloud-icon">☁</div>
+      <h2>جاري تنزيل VibeX ...</h2>
+      <p>يرجى الانتظار، سيبدأ التحميل تلقائيًا</p>
+
+      <div class="progress-track">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+      <div class="progress-value" id="progressValue">0%</div>
+
+      <div class="steps">
+        <div class="step active"><span>⇩</span><b>1</b><small>جار التحميل</small></div>
+        <div class="step"><span>⚙</span><b>2</b><small>قم بالتثبيت</small></div>
+        <div class="step"><span>✓</span><b>3</b><small>استمتع بالتطبيق</small></div>
+      </div>
+
+      <div class="important-note">
+        <strong>ملاحظة مهمة</strong>
+        <p>بعد اكتمال التحميل، سيظهر إشعار من المتصفح. اضغط على الملف واتبع خطوات التثبيت.</p>
+      </div>
+
+      <div class="file-card">
+        <div class="file-icon">⇩</div>
+        <div class="file-meta">
+          <strong>VibeX-v0.9.0.apk</strong>
+          <span>85 MB • ملف Android</span>
+        </div>
+        <button id="openFakeBtn">فتح</button>
+      </div>
+
+      <button class="retry-btn" id="retryBtn">↻ إعادة التحميل</button>
+    </section>
+
+    <section class="features">
+      <h2>مميزات VibeX</h2>
+      <div class="features-grid">
+        <article><span>▣</span><h3>فيديوهات قصيرة</h3><p>استكشف محتوى سريع وممتع.</p></article>
+        <article><span>◉</span><h3>بث مباشر</h3><p>تابع اللايف وتفاعل لحظة بلحظة.</p></article>
+        <article><span>▤</span><h3>شات وغرف</h3><p>تواصل مع أصدقائك ومجتمعك.</p></article>
+      </div>
+    </section>
+
+    <section class="feedback-preview">
+      <div class="preview-card">
+        <span class="paper-plane">✈</span>
+        <h2>نحن نقدر رأيك</h2>
+        <p>ساعدنا على جعل VibeX أفضل عبر إرسال ملاحظاتك من داخل التطبيق.</p>
+        <a href="#feedback">مركز الملاحظات</a>
+      </div>
+    </section>
+
+    <section class="feedback-form" id="feedback">
+      <h2>إرسال ملاحظة</h2>
+      <label>نوع المشكلة
+        <select>
+          <option>اختر نوع المشكلة</option>
+          <option>مشكلة في التحميل</option>
+          <option>مشكلة في التثبيت</option>
+          <option>مشكلة داخل التطبيق</option>
+          <option>اقتراح</option>
+        </select>
+      </label>
+      <label>وصف المشكلة
+        <textarea placeholder="اكتب وصف المشكلة بالتفصيل ..."></textarea>
+      </label>
+      <label>إضافة صورة (اختياري)
+        <input type="file" accept="image/*" />
+      </label>
+      <div class="device-info">
+        <strong>معلومات الجهاز</strong>
+        <span>سيتم جمع إصدار النظام وإصدار التطبيق تلقائيًا داخل التطبيق.</span>
+      </div>
+      <button type="button">إرسال الملاحظة</button>
+    </section>
+
+    <footer>
+      <span>VibeX Beta</span>
+      <small>نسخة تجريبية - قد تتغير الميزات قبل الإطلاق الرسمي.</small>
+    </footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
